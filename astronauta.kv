@@ -1,0 +1,50 @@
+Gerenciador:
+    orientation: 'vertical'
+    Tela:
+
+<Tela>:     
+    orientation:'vertical'     
+    canvas:
+        Color:
+            rgba:1,1,1,1
+        Rectangle:
+            id: tela
+            size:self.size
+            pos:self.pos
+            source:'fundo.jpg'
+    FloatLayout:
+        Label:
+            text:'Pontuação: 0'
+            font_size:'70sp'
+            bold:True
+            size_hint_y:None
+            height:self.font_size
+            y:root.height*0.95-self.height
+        Player:
+            
+            id: player
+            size_hint:None,None
+            size:root.width/3, root.height/3
+            x:root.width/10
+            y:root.height/10
+
+        
+<Player>:
+    source:'player.png'
+  
+    
+
+<Inimigo>:
+    source:'chicken.png'
+    size_hint:None,None
+    size:self.size
+    pos:self.pos
+    width:'100dp'
+    x: 0
+    y: 0
+
+<GameOver>:
+    source:'fundo.jpg'
+    size_hint:None,None
+    size:self.size
+    pos:self.pos
