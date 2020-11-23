@@ -87,16 +87,6 @@ class Tela(Screen):
         return collided
 
 
-Widget(pos=(10, 10), size=(50, 50)).collide_point(40, 40)
-collide_widget(wid)
-wid = Widget(size=(50, 50))
-wid2 = Widget(size=(50, 50), pos=(25, 25))
-wid.collide_widget(wid2)
-
-wid2.pos = (55, 55)
-wid.collide_widget(wid2)
-
-
 class Astronauta(App):
     pass
 
